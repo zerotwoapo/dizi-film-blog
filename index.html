@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinesome - Film & Dizi Blog'um</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Particles -->
+    <div class="particles" id="particles"></div>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">Cinesome</div>
+            <nav>
+                <ul class="nav-menu">
+                    <li>Anasayfa</li>
+                    <li>Film İncelemeleri</li>
+                    <li>Dizi Yorumları</li>
+                    <li>Favorilerim</li>
+                    <li>Hakkımda</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Dizi & Film Dünyamdan</h1>
+        <p>Her izlediğim yapımdan detaylı analizler, unutulmaz sahneler ve kişisel yorumlarım. 
+           Spoiler uyarıları ile güvenle okuyabilirsiniz!</p>
+    </section>
+    
+    <!-- Featured Post -->
+    <section class="featured-section">
+        <div class="featured-post" onclick="openPost('featured')">
+            <div class="featured-content">
+                <div class="featured-poster">
+                    Film Posteri
+                </div>
+                <div class="featured-text">
+                    <h2>The Flash - 1. Sezon İnceleme</h2>
+                    <div class="meta">
+                        <span>📅 20 Mart 2024</span>
+                        <span class="rating">⭐⭐⭐⭐⭐ 9.0/10</span>
+                        <span>🏷️ Dizi İnceleme</span>
+                    </div>
+                    <p>CW'nin süper kahraman dizisi The Flash'in ilk sezonundaki Barry Allen'ın dönüşümü ve Speed Force'un sırları. Grant Gustin'in performansı ve dizinin etkileyici görsel efektleri üzerine detaylı analiz...</p>
+                    <button class="read-more" onclick="window.open('the-flash.html', '_blank')">Devamını Oku</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Latest Posts -->
+    <section class="posts-section">
+        <h2 class="section-title">Son Yazılarım</h2>
+        <div class="posts-grid">
+            <div class="post-card" onclick="window.open('prison-break.html', '_blank')">
+                <div class="post-image">⚡</div>
+                <div class="post-content">
+                    <h3>Prison Break - Kaçış Planlarının Dahisi</h3>
+                    <div class="post-meta">
+                        <span>15 Mart 2024</span>
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p>Michael Scofield'ın geniyal zekası ve kardeş sevgisinin harika bir karışımı. Fox River Penitentiary'den kaçış planlarının detaylı analizi...</p>
+                </div>
+            </div>
+            
+            <div class="post-card" onclick="window.open('godfather.html', '_blank')">
+                <div class="post-image">🎭</div>
+                <div class="post-content">
+                    <h3>The Godfather - Sinema Tarihinin Başyapıtı</h3>
+                    <div class="post-meta">
+                        <span>10 Mart 2024</span>
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p>Francis Ford Coppola'nın ustalık eseri ve Marlon Brando'nun unutulmaz Don Vito Corleone performansı. Mafya filmlerinin zirvesi...</p>
+                </div>
+            </div>
+            
+            <div class="post-card" onclick="window.open('the-flash-season2.html', '_blank')">
+                <div class="post-image">⚡</div>
+                <div class="post-content">
+                    <h3>The Flash - 2. Sezon ve Zoom Tehdidi</h3>
+                    <div class="post-meta">
+                        <span>05 Mart 2024</span>
+                        <span class="rating">⭐⭐⭐⭐</span>
+                    </div>
+                    <p>Earth-2'den gelen Zoom'un Barry Allen için yarattığı karanlık dönem ve çoklu evren konseptinin diziye etkisi...</p>
+                </div>
+            </div>
+            
+            <div class="post-card" onclick="openPost('post4')">
+                <div class="post-image">🎪</div>
+                <div class="post-content">
+                    <h3>Stranger Things 4 - Vecna Sahneleri</h3>
+                    <div class="post-meta">
+                        <span>28 Şubat 2024</span>
+                        <span class="rating">⭐⭐⭐⭐</span>
+                    </div>
+                    <div class="spoiler-warning">⚠️ SPOILER İÇERİR</div>
+                    <p>4. sezonun en korkunç anları ve Vecna'nın karakter tasarımının psikolojik etkileri üzerine derin bir analiz...</p>
+                </div>
+            </div>
+            
+            <div class="post-card" onclick="openPost('post5')">
+                <div class="post-image">🎨</div>
+                <div class="post-content">
+                    <h3>Everything Everywhere All at Once</h3>
+                    <div class="post-meta">
+                        <span>20 Şubat 2024</span>
+                        <span class="rating">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p>Bu yılın en çılgın filmi hakkında... Çoklu evren konseptinin bu kadar yaratıcı işlendiğini daha önce görmemiştim.</p>
+                </div>
+            </div>
+            
+            <div class="post-card" onclick="openPost('post6')">
+                <div class="post-image">👑</div>
+                <div class="post-content">
+                    <h3>House of Dragon - Karakter Gelişimleri</h3>
+                    <div class="post-meta">
+                        <span>15 Şubat 2024</span>
+                        <span class="rating">⭐⭐⭐⭐</span>
+                    </div>
+                    <p>Game of Thrones'un prequel'ında hangi karakterlerin beni etkilediği ve neden bu dizinin farklı bir hikaye anlatım tarzı benimsediğini düşündüğüm...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#">📧</a>
+            <a href="#">📘</a>
+            <a href="#">📷</a>
+            <a href="#">🐦</a>
+        </div>
+        <p>&copy; 2025 Cinesome - Tüm hakları saklıdır.</p>
+        <p>Film ve dizi tutkusuyla hazırlanmıştır 🎬</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
